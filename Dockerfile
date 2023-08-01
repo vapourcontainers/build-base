@@ -7,7 +7,10 @@ ENV STD_CMAKE_ARGS="-DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_INSTALL_LIBDIR=/us
 
 RUN <<EOF
 apt-get update
-apt-get install -y --no-install-recommends build-essential git curl ca-certificates autoconf automake libtool cmake
+apt-get install -y --no-install-recommends build-essential \
+    git curl ca-certificates \
+    autoconf automake libtool \
+    cmake ninja-build pkg-config
 apt-get autoremove -y --purge
 apt-get clean
 rm -rf /var/lib/apt/lists/*
