@@ -23,5 +23,4 @@ apt-get install -y --allow-unauthenticated --no-install-recommends deb-multimedi
 apt-get autoremove -y --purge
 apt-get clean
 rm -rf /var/lib/apt/lists/*
-mkdir -p /usr/local/lib/vapoursynth
 EOF
